@@ -13,6 +13,10 @@
 	--accent-color: #1434E1;
 }
 
+
+
+
+/*! УТИЛИТЫ */
 body {
 	background-color: var(--page-bg-color);
 	color: var(--text-color);
@@ -24,14 +28,28 @@ body {
 }
 
 
+button {
+	background-color: transparent;
+	
+	border: none;
+	
+	padding: 0;
+}
 
-/*! УТИЛИТЫ */
+a {
+	text-decoration: none;
+}
+
+p,h1,h2,h3,h4,h5,h6 {
+	margin-top: 0;
+}
+
 .container {
 	max-width: 1140px;
 	padding: 0 15px;
 	margin: 0 auto;
 
-	outline: 1px solid tomato;
+	/* outline: 1px solid tomato; */
 }
 
 .section-title {
@@ -43,23 +61,16 @@ body {
 	letter-spacing: -1px;
 }
 
-button {
-	background-color: transparent;
-
-	border: none;
-
-	padding: 0;
-}
-
-a {
-	text-decoration: none;
-}
-
-
+/* Icon play */
+.icon-play {
+	width: 65px;
+	height: 65px;
+}	
 
 
 /*! HEADER */
 .header {
+	margin-bottom: 127px;
 	padding-top: 60px;
 }
 
@@ -81,4 +92,94 @@ a {
 	fill: currentColor;
 
 	display: block;
+}
+
+
+
+/*! HERO */
+.hero {
+	position: relative;
+
+	margin-bottom: 550px;
+}
+
+.hero-row {
+	display: flex;
+}
+/* Hero body */
+.hero-body {
+	flex-basis: 475px;
+}
+.hero-title {
+	color: var(--secondary-title-color);
+
+	font-weight: 700;
+	font-size: 60px;
+	line-height: 1.17;
+	letter-spacing: -1px;
+
+	margin-bottom: 30px;
+}
+
+.hero-text {
+	opacity: .7;
+
+	margin-bottom: 56px;
+}
+
+/* Button */
+.button {
+	background-color: var(--button-bg-color);
+	color: var(--primary-white-color);
+	
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 4px;
+
+	display: inline-block;
+	padding: 17px 30px;
+}
+
+.button:hover {
+	background-color: #6722d6;
+}
+
+/* Hero Video */
+.hero-video {
+	flex-basis: 665px;
+}
+
+.hero-bg {
+	background-image: url(../images/hero-gradient.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	width: 50%;
+	height: 80vh;
+
+	position: absolute;
+	top: -60px;
+	right: 0;
+}
+
+
+.video {
+	background-image: url(../images/hero-video.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40%;
+	height: 35%; 
+	
+	position: absolute;
+	left: -20%;
+	bottom: 20%;
 }
