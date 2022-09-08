@@ -98,9 +98,9 @@ p,h1,h2,h3,h4,h5,h6 {
 
 /*! HERO */
 .hero {
+	height: 80vh;
+	
 	position: relative;
-
-	margin-bottom: 550px;
 }
 
 .hero-row {
@@ -182,4 +182,81 @@ p,h1,h2,h3,h4,h5,h6 {
 	position: absolute;
 	left: -20%;
 	bottom: 20%;
+}
+
+
+
+/*! ABOUT */
+.about {
+	padding-top: 137px;
+}
+
+.about-row {
+	display: flex;
+	align-items: center;
+}
+
+/* IMG */
+.about-img {
+	display: block;
+	align-self: flex-start;
+	margin-right: 94px;
+}
+
+/* Content */
+.about-body {
+
+}
+
+.about-title {
+	margin-bottom: 30px;
+}
+
+.about-text {
+	margin-bottom: 60px;
+	
+	opacity: .7;
+}
+
+.about-p:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+/* User */
+.user {
+	color: var(--text-color);
+	
+	display: inline-flex;
+}
+
+.user-photo {
+	border-radius: 50%;
+	
+	margin-right: 30px;
+	width: 65px;
+	height: 65px;
+
+	overflow: hidden;
+}
+
+.user-photo > img {
+	display: block;
+	width: 100%;
+	height: 100%;
+
+	object-position: center;
+}
+
+.user-name {
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 1.45;
+
+	margin-bottom: 6px;
+}
+
+.user-job {
+	margin-bottom: 0;
+
+	opacity: .7;
 }
