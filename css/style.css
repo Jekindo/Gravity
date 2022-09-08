@@ -14,6 +14,7 @@
 }
 
 body {
+	background-color: var(--page-bg-color);
 	color: var(--text-color);
 	
 	font-family: 'Fira Sans', sans-serif;
@@ -25,11 +26,59 @@ body {
 
 
 /*! УТИЛИТЫ */
-.title {
+.container {
+	max-width: 1140px;
+	padding: 0 15px;
+	margin: 0 auto;
+
+	outline: 1px solid tomato;
+}
+
+.section-title {
 	color: var(--primary-title-color);
 	
 	font-weight: 600;
 	font-size: 40px;
 	line-height: 1.25;
 	letter-spacing: -1px;
+}
+
+button {
+	background-color: transparent;
+
+	border: none;
+
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+
+/*! HEADER */
+.header {
+	padding-top: 60px;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo,
+.search,
+.menu {
+	color: #222222;
+
+	cursor: pointer;
+}
+
+.header-icon {
+	fill: currentColor;
+
+	display: block;
 }
