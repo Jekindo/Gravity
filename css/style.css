@@ -1,0 +1,35 @@
+:root {
+	--page-bg-color: #F4F4F4;
+	--primary-white-color: #fff;
+	--primary-black-color: #000;
+
+
+	--primary-title-color: #222222;
+	--secondary-title-color: #151515;
+	--text-color: #222222;
+
+	--button-bg-color: #4737FF;
+
+	--accent-color: #1434E1;
+}
+
+body {
+	color: var(--text-color);
+	
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.56;
+}
+
+
+
+/*! УТИЛИТЫ */
+.title {
+	color: var(--primary-title-color);
+	
+	font-weight: 600;
+	font-size: 40px;
+	line-height: 1.25;
+	letter-spacing: -1px;
+}
