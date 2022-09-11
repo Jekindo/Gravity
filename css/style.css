@@ -70,15 +70,12 @@ p,h1,h2,h3,h4,h5,h6 {
 
 /*! HEADER */
 .header {
-	width: 100%;
-	/* margin-bottom: 127px; */
-	/* padding-top: 60px; */
-
-
 	position: fixed;
 	top: 60px;
 	left: 0;
 	z-index: 1;
+
+	width: 100%;
 }
 
 .nav {
@@ -106,10 +103,10 @@ p,h1,h2,h3,h4,h5,h6 {
 
 /*! HERO */
 .hero {
+	position: relative;
+
 	min-height: 80vh;
 	/* margin-top: 127px; */
-	
-	position: relative;
 }
 
 .hero-row {
@@ -157,36 +154,36 @@ p,h1,h2,h3,h4,h5,h6 {
 
 /* Hero Video */
 .hero-video {
-	background-image: url(../images/hero-gradient.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
+	position: absolute;
+	top: -60px;
+	right: 0;
 
 	width: 50%;
 	height: 80vh;
 
-	position: absolute;
-	top: -60px;
-	right: 0;
+	background-image: url(../images/hero-gradient.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 
 .video {
-	background-image: url(../images/hero-video.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
-	
+	position: absolute;
+	left: -20%;
+	bottom: 20%;
+
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	width: 40%;
 	height: 35%; 
 	
-	position: absolute;
-	left: -20%;
-	bottom: 20%;
+	background-image: url(../images/hero-video.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
 }
 
 
