@@ -97,5 +97,21 @@
         </div>
       </div>
     </section>
+
+
+	
+	<script>
+		// console.log(document.querySelector("body").getBoundingClientRect().height)
+		
+		const { height: HeaderHeight } = document
+		.querySelector(".header")
+		.getBoundingClientRect();
+		const { top: HeaderTop } = document
+		.querySelector(".header")
+		.getBoundingClientRect();
+
+		// document.body.style.marginTop = `${HeaderHeight}px`;
+		document.body.style.paddingTop = `${HeaderTop + HeaderHeight + 127}px`;
+	</script>
   </body>
 </html>

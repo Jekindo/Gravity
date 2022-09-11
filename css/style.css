@@ -25,6 +25,8 @@ body {
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 1.56;
+
+	padding-top: 127px;
 }
 
 
@@ -48,8 +50,6 @@ p,h1,h2,h3,h4,h5,h6 {
 	max-width: 1140px;
 	padding: 0 15px;
 	margin: 0 auto;
-
-	/* outline: 1px solid tomato; */
 }
 
 .section-title {
@@ -70,11 +70,19 @@ p,h1,h2,h3,h4,h5,h6 {
 
 /*! HEADER */
 .header {
-	margin-bottom: 127px;
-	padding-top: 60px;
+	width: 100%;
+	/* margin-bottom: 127px; */
+	/* padding-top: 60px; */
+
+
+	position: fixed;
+	top: 60px;
+	left: 0;
+	z-index: 1;
 }
 
 .nav {
+	min-height: auto;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -98,7 +106,8 @@ p,h1,h2,h3,h4,h5,h6 {
 
 /*! HERO */
 .hero {
-	height: 80vh;
+	min-height: 80vh;
+	/* margin-top: 127px; */
 	
 	position: relative;
 }
